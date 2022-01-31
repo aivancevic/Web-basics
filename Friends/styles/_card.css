@@ -1,0 +1,65 @@
+/* ########## CARDS ########## */
+#cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.card__avatar {
+  width: 100px;
+  margin: 8px 0;
+  border-radius: 50%;
+}
+
+.card__name {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.card__button {
+  min-width: 120px;
+  padding: 8px 16px;
+  margin: 8px 0;
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: white;
+  background-color: var(--theme-secondary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.card__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* MOBILE STYLINGS FOR #cards */
+@media only screen and (max-width: 768px) {
+  #cards {
+    -ms-grid-columns: 1fr 16px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}

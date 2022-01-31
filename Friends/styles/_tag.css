@@ -1,0 +1,35 @@
+/* ########## TAGS ########## */
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 52px;
+  margin-bottom: 30px;
+}
+
+.tag {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.tag__text {
+  padding-right: 8px;
+}
+
+.tag__close {
+  width: 32px;
+  height: 32px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-right: -12px;
+  font-size: 14px;
+  color: var(--font-secondary-color);
+  cursor: pointer;
+}

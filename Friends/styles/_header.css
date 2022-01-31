@@ -1,0 +1,21 @@
+/* ########## PAGE HEADER ########## */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 12px 0;
+  color: white;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.header__title {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.header__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-light-color);
+}

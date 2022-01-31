@@ -1,0 +1,13 @@
+/* ########## CSS Variables ########## */
+:root {
+  --font-primary-color: #333333;
+  --font-secondary-color: #666666;
+  --font-light-color: rgba(255, 255, 255, 0.8);
+  --font-family: "Open Sans", sans-serif;
+  --theme-primary-color: #2a5c84;
+  --theme-secondary-color: #2a5c84;
+  --light-color: #e8f1f8;
+  --border-color: #cccccc;
+  --shadow-color: rgba(0, 0, 0, 0.06);
+  --container-breakpoint: 800px;
+}

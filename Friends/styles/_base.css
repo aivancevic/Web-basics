@@ -1,0 +1,23 @@
+/* ########## BASE STYLINGS ########## */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--font-primary-color);
+  line-height: 1.5;
+  background-color: var(--theme-primary-color);
+}
+
+main {
+  padding: 20px 0 60px;
+  flex-grow: 1;
+  background-color: var(--light-color);
+  overflow-y: auto;
+}

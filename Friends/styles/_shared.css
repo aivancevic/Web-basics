@@ -1,0 +1,37 @@
+/* ########## SHARED CLASSES ########## */
+.container {
+  max-width: var(--container-breakpoint);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.dot {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: var(--font-light-color);
+}
+
+.title {
+  margin: 0px 0 16px;
+  font-size: 16px;
+  color: var(--font-secondary-color);
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: "";
+  height: 1px;
+  width: 80px;
+  display: block;
+  margin-top: 4px;
+  background-color: var(--font-secondary-color);
+}

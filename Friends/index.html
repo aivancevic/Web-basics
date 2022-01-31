@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Friends</title>
+
+  <!-- Povezivanje s CSS dokumentom -->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <!-- Povezivanje s JS-->
+  <script defer src="./JS/script.js"></script>
+
+  <!-- Google Font - Open Sans -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+
+  <!-- Font Awesome ikone -->
+  <script defer src="https://kit.fontawesome.com/b8a224eecd.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="flex-column">
+  <header class="header">
+    <div class="container flex-column">
+      <div class="header__info">
+      </div>
+      <h2 class="header__title"><em>Friends</em></h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="container flex-column">
+      <!-- SELECTED ACTOR TAG LIST -->
+      <h2 class="title">
+        Odabrano:
+        <span id="counter">0</span>
+      </h2>
+      <section id="tags">
+        <!-- Ovdje preko JS-a dodajte/append-ajte "tag" s imenom odabranog glumca koji bi trebao imati HTML kod kao: -->
+        <!--
+            <article class="tag">
+              <span class="tag__name">Ime Glumca</span>
+              <i class="fas fa-times tag__close"></i>
+            </article>
+          -->
+      </section>
+
+      <!-- ACTOR CARDS LIST -->
+      <h2 class="title">Friends:</h2>
+      <section id="cards">
+        <article id="actor-1" class="card">
+          <img class="card__avatar" src="./images/chandler.jpg" alt="Chandler Bing" />
+          <h3 class="card__name">Chandler Bing</h3>
+          <button class="card__button">Odaberi</button>
+        </article>
+
+        <article id="actor-2" class="card">
+          <img class="card__avatar" src="./images/phoebe.jpg" alt="Phoebe Buffay" />
+          <h3 class="card__name">Phoebe Buffay</h3>
+          <button class="card__button">Odaberi</button>
+        </article>
+
+        <article id="actor-3" class="card">
+          <img class="card__avatar" src="./images/rachel.jpg" alt="Rachel Green" />
+          <h3 class="card__name">Rachel Green</h3>
+          <button class="card__button">Odaberi</button>
+        </article>
+
+        <article id="actor-4" class="card">
+          <img class="card__avatar" src="./images/ross.jpg" alt="Ross Geller" />
+          <h3 class="card__name">Ross Geller</h3>
+          <button class="card__button">Odaberi</button>
+        </article>
+
+        <article id="actor-5" class="card">
+          <img class="card__avatar" src="./images/joey.jpeg" alt="Joey Tribbiani" />
+          <h3 class="card__name">Joey Tribbiani</h3>
+          <button class="card__button">Odaberi</button>
+        </article>
+
+        <article id="actor-6" class="card">
+          <img class="card__avatar" src="./images/monica.jpg" alt="Monica Geller" />
+          <h3 class="card__name">Monica Geller</h3>
+          <button class="card__button">Odaberi</button>
+        </article>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
